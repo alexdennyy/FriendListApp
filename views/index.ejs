@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<link rel="stylesheet" href="/mystyle.css" />
+
+</head>
+
+<body>
+  <div class="title">My Friends List</div>
+  <div class="dayContainer">
+    <form method="POST" action="/api/addDays">
+    <table class="calendarTable" style="width:80%">
+        <tr class="weekDayDataControlsRow">
+          <th>
+                Who would you like to add to your friendslist?<br>
+                <input type="text" name="favFood" placeholder="Name"><br>
+
+          </th>
+        </tr>
+    </table>
+
+    <div class="submitCalendar">
+        All Done?<br>
+        <input type="submit" value="Add Friend">
+    </div>
+  </form>
+
+  </div>
+
+  <div class="listFriends">
+    <ul>
+    <% for(var i = 0; i < example.length; i++){%>
+        <div class="actionForm">
+        <li><%= example[i].myLunch %>
+          <form method="POST" action="/api/deleteBut">
+            <input type="hidden" name="id" value="<%= example[i].id %>">
+            <input type="submit" value="Unfriend <%= example[i].myLunch %>"></input>
+          </form>
+          <a href="/api/edit?id=<%= example[i].id%>">Edit</a>
+          </li>
+        </div>
+        <% }%>
+    </ul>
+  </div>
+</body>
+</html>

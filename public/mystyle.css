@@ -1,0 +1,54 @@
+.title{
+  text-align: center;
+  font-size: 48px;
+}
+
+.day{
+  border: 1px solid black;
+  height: 10%;
+  width: 18%;
+  float: left;
+}
+
+.dayContainer{
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+.addForms{
+  float: left;
+}
+
+.calendarTable tr th{
+  border: 1px solid black;
+}
+
+.weekDayDataRow th{
+  font-weight: normal;
+  height: 15px;
+}
+
+
+.listFriends{
+  text-align: center;
+}
+
+.actionForm{
+  border: 1px solid black;
+  width: 20%;
+}
+
+.submitCalendar{
+  width: 80%;
+  border: 1px solid black;
+  text-align: center;
+  height: 15%;
+}
+
+.resetCalendar{
+  width: 80%;
+  border: 1px solid black;
+  text-align: center;
+  height: 15%;
+}
