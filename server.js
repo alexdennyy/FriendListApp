@@ -106,7 +106,7 @@ MongoClient.connect("mongodb://alex:denny123@ds227243.mlab.com:27243/crud",{useN
     if(err) { console.log(err) }
     console.log("Connected successfully to server");
     db = client.db("crud");
-    app.listen(port, () => {
+    app.listen( () => {
         console.log('meow')
     })
 })
