@@ -4,6 +4,7 @@ var id  = 1;
 var express                             = require('express')      // call express
 var bodyParser = require('body-parser')
 var app        = express()     // define our app using express
+port = process.env.PORT || 80
 
 const MongoClient = require('mongodb').MongoClient
 
